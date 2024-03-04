@@ -18,5 +18,6 @@ public class Class {
     private String title;
     @Column(nullable = false)
     private String description;
-
+    @OneToMany(mappedBy = "classes")
+    private ArrayList<Enrollment> enrollments;
 }
